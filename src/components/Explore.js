@@ -45,7 +45,7 @@ export default class Explore extends Component {
     return (
       <div>
         <PageHeader>
-          Github Wraper <small>Redux Demo</small>
+          Github Star Wraper <small>Redux Demo</small>
         </PageHeader>
 
         <Form inline>

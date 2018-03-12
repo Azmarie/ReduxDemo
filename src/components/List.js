@@ -43,13 +43,13 @@ export default class List extends Component {
 
     const isLastPage = !nextPageUrl
     if (isEmpty && isLastPage) {
-      return <h1><i>Nothing here!</i></h1>
+      return <h1><i>Be the first one to Star!</i></h1>
     }
 
     return (
       <div>
-        {items.map(renderItem)}
-        {pageCount > 0 && !isLastPage && this.renderLoadMore()}
+      {items.map(renderItem)}
+      {pageCount > 0 && !isLastPage && this.renderLoadMore()}
       </div>
     )
   }
