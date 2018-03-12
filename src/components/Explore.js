@@ -2,7 +2,8 @@
 
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import './components.css'
+import { Button } from 'react-bootstrap';
+
 
 
 const GITHUB_REPO = 'https://github.com/Azmarie/ReduxDemo'
@@ -48,9 +49,9 @@ export default class Explore extends Component {
                ref={(input) => this.input = input}
                defaultValue={this.props.value}
                onKeyUp={this.handleKeyUp} />
-        <button onClick={this.handleGoClick}>
+        <Button type="button" class="btn btn-primary" onClick={this.handleGoClick}>
           Go!
-        </button>
+        </Button>
         <p>
           Code on <a href={GITHUB_REPO} target="_blank" rel="noopener noreferrer">Github</a>.
         </p>
