@@ -2,7 +2,7 @@
 
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { PageHeader, Form, Button, FormGroup, ControlLabel, FormControl } from 'react-bootstrap';
+import { PageHeader, Form, Glyphicon, Button, FormGroup, ControlLabel, FormControl } from 'react-bootstrap';
 
 
 const GITHUB_REPO = 'https://github.com/Azmarie/ReduxDemo'
@@ -45,16 +45,18 @@ export default class Explore extends Component {
     return (
       <div>
         <PageHeader>
-          Github Star Wraper <small>Redux Demo</small>
+          Github Star List <small> Redux Demo</small>
         </PageHeader>
 
         <Form inline>
           <FormGroup controlId="formInlineName">
-            <ControlLabel>Type a username or repo full name and hit 'Go':</ControlLabel>{' '}
+            <h2>Check the Star List now! </h2>
+             <ControlLabel>Type the user / Repo full name:</ControlLabel>{' '}
             <FormControl size="45" inputRef={(ref) => this.input = ref} defaultValue={this.props.value} onKeyUp={this.handleKeyUp} />
-          </FormGroup>{' '}
-          <Button type="submit" bsStyle="primary" onClick={this.handleGoClick}> Go!
+
+          <Button type="submit" bsStyle="primary" onClick={this.handleGoClick}> <Glyphicon glyph="star" /> Go!
           </Button>
+          </FormGroup>{' '}
         </Form>
         <p>
           Code on <a href={GITHUB_REPO} target="_blank" rel="noopener noreferrer">Github</a>.

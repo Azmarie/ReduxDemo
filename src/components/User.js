@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
-import { Grid, Row, Col, Image} from 'react-bootstrap';
+import { Grid, Row, Col, Image, Badge} from 'react-bootstrap';
 
 
 const User = ({ user }) => {
@@ -13,6 +13,9 @@ const User = ({ user }) => {
         <Col xs={12} md={8}>
           <Image src={avatarUrl} alt={login} circle width="200px" />
             <Link to={`/${login}`}>
+            <h3>
+              {login} {name && <span>({name})</span>}
+            </h3>
             </Link>
         </Col>
       </Row>
