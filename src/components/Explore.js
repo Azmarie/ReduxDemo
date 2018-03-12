@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 import './components.css'
 
 
-const GITHUB_REPO = 'https://github.com/reactjs/redux'
+const GITHUB_REPO = 'https://github.com/Azmarie/ReduxDemo'
 
 export default class Explore extends Component {
   static propTypes = {
